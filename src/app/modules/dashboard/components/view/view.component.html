@@ -1,0 +1,53 @@
+<div class="row pt-3 pb-3">
+  <div class="col">
+    <button style="width: 100px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Crear
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="solid"></div>
+  </div>
+</div>
+
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="onRegister()" #myform="">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input required type="text" class="form-control" name="name" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input required type="email" class="form-control" name="email" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Edad:</label>
+            <input required type="password" class="form-control" name="password" id="password">
+          </div>
+          <!-- <div class="mb-3">
+            <label for="allergy" class="form-label">Alergía:</label>
+            <input required type="text" class="form-control" name="allergy" id="allergy">
+          </div> -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onRegister()">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>

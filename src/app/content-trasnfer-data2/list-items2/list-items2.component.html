@@ -1,0 +1,27 @@
+<!--<ng-container *ngFor="let item of list" >
+  <div style="margin-top: 5px;" [ngStyle]="{'max-witdh.rem': widthExp}">
+    <div style="padding: 5px;">BODY {{item.status}}</div>
+  </div>
+</ng-container>
+<hr>
+
+<div *ngFor="let item of list" [ngClass]="{'status':item.status}" >
+  <div style="padding: 5px;">BODY{{item.status}}</div>
+  </div>-->
+<div *ngFor="let item of values">
+  <hr>
+  <div style="background-color: red; border-radius: 5px;">
+    <ng-container *ngIf="item.custom">
+      <ng-container *ngTemplateOutlet="bodyTemplate; context:{
+        $implicit:item,
+        title: item.nombre
+      }">
+      </ng-container>
+    </ng-container>
+    <ng-container *ngIf="!item.custom">
+      {{item|json}}
+    </ng-container>
+
+  </div>
+
+</div>

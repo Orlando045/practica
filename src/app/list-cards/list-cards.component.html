@@ -1,0 +1,80 @@
+<app-card>
+  <ng-container header>
+    <table>
+      <tr>
+
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+      </tr>
+      <tr>
+        <td > <ng-content></ng-content> head>Dato 1</td>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+      </tr>
+      <tr>
+        <td>Dato 4</td>
+        <td>Dato 5</td>
+        <td>Dato 6</td>
+      </tr>
+    </table>
+   </ng-container>
+  <div>
+
+  </div>
+
+
+
+
+</app-card>
+
+
+
+
+
+<!--<div style="border: solid 1px #ccc; border-radius: 5px; overflow-y: auto ; width: 250px;  height:300px;">
+  <div *ngFor="let item of list">
+
+    </div>
+</div>-->
+<app-card [data]="list[0]" >
+  <button (click)="submit(list[0].id)">
+    enviar
+  </button>
+
+  <ng-container header>
+   <h1>titulo del trabajo</h1>
+  </ng-container>
+
+  <ng-container body>
+      informacion
+  </ng-container>
+
+  <ng-container footer>
+    version x
+  </ng-container>
+
+
+</app-card>
+<app-card>
+  <div>
+    <table>
+    <tr>
+      <th>Encabezado 1</th>
+      <th>Encabezado 2</th>
+      <th>Encabezado 3</th>
+    </tr>
+    <tr>
+      <td >Dato 1</td>
+      <td>Dato 2</td>
+      <td>Dato 3</td>
+    </tr>
+    <tr>
+      <td>Dato 4</td>
+      <td>Dato 5</td>
+      <td>Dato 6</td>
+    </tr>
+  </table>
+  </div>
+</app-card>
+

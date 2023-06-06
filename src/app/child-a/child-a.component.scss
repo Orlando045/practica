@@ -1,0 +1,12 @@
+.selected{
+    background-color: #ccc;
+    border: 1px solid rgb(42, 184, 194);
+    border-radius: 5px;
+}
+.container{
+    overflow: hidden;
+    font-size: 1.1rem;
+    &:hover{
+        background-color: rgb(240, 240, 240);
+    }
+}

@@ -1,0 +1,9 @@
+.selected{
+  border: solid 1px rgb(104, 104, 104);
+  background-color: rgb(169, 52, 236);
+}
+
+.container-card{
+  border: solid 1px #ccc !important;
+  background-color: rgb(216, 216, 216) !important;
+}

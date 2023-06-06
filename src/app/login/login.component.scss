@@ -1,0 +1,54 @@
+.formulario {
+  width: 30%;
+}
+// .barra{
+//     background-color: rgb(11, 159, 238);
+
+// }
+.input {
+  padding: 10px;
+}
+.input2 {
+  padding: 7px;
+}
+
+.input3 {
+  padding: 10px;
+}
+.input4 {
+  padding: 19px;
+}
+.input5 {
+  padding: 2px;
+}
+///////
+.contenedor {
+  display: flex;
+}
+
+.barra-lateral {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+
+  background-color: #0cbeff;
+}
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.barra-lateral li {
+  padding: 100px;
+}
+
+.barra-lateral a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.contenido {
+  flex-grow: 1;
+  padding: 20px;
+}
